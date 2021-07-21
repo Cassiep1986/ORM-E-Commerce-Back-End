@@ -5,17 +5,23 @@ const Tag = require("./Tag");
 const ProductTag = require("./ProductTag");
 
 // Products belongsTo Category
-// Product.belongsTo(Category, {
-//   foreignKey: "category_id",
-//   onDelete: "CASCADE",
-// });
 
 Product.belongsTo(Category, {
   foreignKey: {
     key: "category_id",
     allowNull: false,
+    onDelete: 'CASCADE',
   },
 });
+
+//**Joe's solution
+// Product.belongsTo(Category, {
+//   foreignKey: {
+//     key: "product_id",
+//     allowNull: false,
+//   },
+// });
+
 // Categories have many Products
 Category.hasMany(Product, {
   foreignKey: "category_id",
