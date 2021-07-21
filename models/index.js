@@ -14,14 +14,6 @@ Product.belongsTo(Category, {
   },
 });
 
-//**Joe's solution
-// Product.belongsTo(Category, {
-//   foreignKey: {
-//     key: "product_id",
-//     allowNull: false,
-//   },
-// });
-
 // Categories have many Products
 Category.hasMany(Product, {
   foreignKey: "category_id",
