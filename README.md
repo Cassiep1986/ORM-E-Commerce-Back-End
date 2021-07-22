@@ -16,10 +16,28 @@ This application demonstrates a functional backend database using MySQL2 and Seq
 <p>&nbsp;</p>
 
 ## Installation
-To use this application, fork and download files from this repository and replace the .env file with the appropriate USER and password (PW) information. The install dependencies (see below).
+To use this application, first fork and download files from this repository. 
 
+Next, rename the .env.example file to .env (see example below) and adjust the .env file to reflect the appropriate USER and password (PW). 
 
-To install all necessary dependencies, run the following command in the terminal:
+<p>&nbsp;</p>
+
+**change**
+
+```
+.env.example
+```
+
+**to**
+
+```
+.env
+
+```
+
+<p>&nbsp;</p>
+
+Then, install all necessary dependencies, by running the following command in the terminal:
 
 ```
 npm init i
@@ -27,7 +45,7 @@ npm init i
 
 <p>&nbsp;</p>
 
-If missing package.json file, run the following command in the terminal:
+If missing package.json file, run the following command:
 
 ```
 npm init -y
@@ -35,7 +53,7 @@ npm init -y
 
 <p>&nbsp;</p>
 
-Check the package.json file for the following dependencies and run the following command(s) in the terminal if missing: 
+Then, check the package.json file for the following dependencies and run the following command(s) if missing: 
 
 <p>&nbsp;</p>
 
@@ -68,11 +86,13 @@ Express
 npm i express
 ```
 
-Note: This application requiers installation of node.js, npm and MySQL.
+Note: This application requires installation of node.js, npm and MySQL.
 
 <p>&nbsp;</p>
 
 ## Usage
+
+<p>&nbsp;</p>
 
 To initialize the application, first enter the MySQL shell by using the following command in the terminal:
 
@@ -80,7 +100,9 @@ To initialize the application, first enter the MySQL shell by using the followin
 mySQL -u root
 ```
 
-Then add the database by using the following command followed by the schema.sql path name: (example below)
+<p>&nbsp;</p>
+
+Next, add the database by using the following command followed by the schema.sql path name: (example below)
 
 ```
 source 
@@ -91,19 +113,41 @@ _Example_
 ```
 source c:\Users\cassi\bootcamp\homeworks\ORM-E-Commerce-Back-End\db\schema.sql
 ```
-Exit mysql by using the following command in the terminal:
+
+<p>&nbsp;</p>
+
+Then, exit the MySQL shell by using the following command in the terminal:
 ```
 exit
 ```
-Next start the server using nodemon or the node server.js command in the terminal.
 
-Finally, test API endpoints using insomnia. 
+<p>&nbsp;</p>
+
+After exiting the MySQL shell, seed the database by using the following command in the terminal:
+
+```
+node seeds/
+```
+
+<p>&nbsp;</p>
+
+Then, start the server using nodemon or the node server.js command in the terminal.
+
+<p>&nbsp;</p>
+
+Finally, test API endpoints using insomnia.
+
+<p>&nbsp;</p>
+
+### Demo Video
+
+<p>&nbsp;</p>
 
 The following animation shows the application's inital steps for starting the application:
 
-![README demo](./READMEDemoVideo.gif)
+![demo](./demo.gif)
 
-use the following [link](https://drive.google.com/file/d/1AbplFeh8VbFrxcDBtWqqhl8wEHe2R8lF/view) to access the full length video.
+use the following [link](https://drive.google.com/file/d/1PHYqEdK9QS9VdDLjpya30pDUSY_QKQXI/view) to access the full length video.
 
 ## License
 
